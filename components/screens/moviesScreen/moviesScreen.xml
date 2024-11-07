@@ -1,0 +1,7 @@
+<component name="MoviesScreen" extends="Group">
+  <script type="text/brightscript" uri="moviesScreen.brs" />
+  
+  <children>
+    <Label text="Movies Screen"/>
+  </children>
+</component>
