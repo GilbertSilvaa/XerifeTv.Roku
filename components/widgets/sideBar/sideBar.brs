@@ -1,5 +1,14 @@
 sub Init()
+  m.btnMovies = m.top.FindNode("btn-movies")
+  m.btnSeries = m.top.FindNode("btn-series")
+  m.btnChannels = m.top.FindNode("btn-channels")
+
+  m.top.ObserveField("focusedChild", "OnFocusChange")
   Setup()
+end sub
+
+sub OnFocusChange()
+  if m.top.hasFocus() then m.top.width = 240
 end sub
 
 sub Setup()

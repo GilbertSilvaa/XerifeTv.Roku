@@ -2,21 +2,63 @@
   <script type="text/brightscript" uri="sideBar.brs" />
   
   <children>
-    <LayoutGroup translation="[20, 230]" itemSpacings="40">
-      <Poster 
-        uri="pkg:/images/icons/movies.png" 
-        width="36" 
-        height="36"/>
+    <LayoutGroup translation="[20, 225]" itemSpacings="45">
 
-      <Poster 
-        uri="pkg:/images/icons/series.png" 
-        width="36" 
-        height="36"/>
+      <LayoutGroup 
+        layoutDirection="horiz" 
+        vertAlignment="center" 
+        itemSpacings="15">
+        <Rectangle 
+          id="btn-movies"
+          color="0xffd500" 
+          width="4" 
+          height="36"/>
 
-      <Poster 
-        uri="pkg:/images/icons/live.png" 
-        width="36" 
-        height="36"/>
+        <Poster 
+          uri="pkg:/images/icons/movies.png" 
+          width="36" 
+          height="36"/>
+
+        <Label text="Filmes" height="36" vertAlign="center"/>
+      </LayoutGroup>
+
+      <LayoutGroup 
+        layoutDirection="horiz" 
+        vertAlignment="center" 
+        itemSpacings="15">
+        <Rectangle 
+          id="btn-series"
+          color="0xffd500" 
+          width="4" 
+          height="36"
+          visible="false"/>
+
+        <Poster 
+          uri="pkg:/images/icons/series.png" 
+          width="36" 
+          height="36"/>
+        
+        <Label text="Séries" height="36" vertAlign="center"/>
+      </LayoutGroup>
+
+      <LayoutGroup       
+        layoutDirection="horiz" 
+        vertAlignment="center" 
+        itemSpacings="15">
+        <Rectangle 
+          id="btn-channels"
+          color="0xffd500" 
+          width="4" 
+          height="36"
+          visible="false"/>
+
+        <Poster 
+          uri="pkg:/images/icons/live.png" 
+          width="36" 
+          height="36"/>
+        
+        <Label text="Canais" height="36" vertAlign="center"/>
+      </LayoutGroup>
     </LayoutGroup>
   </children>
 </component>

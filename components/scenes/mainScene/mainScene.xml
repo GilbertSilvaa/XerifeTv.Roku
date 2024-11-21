@@ -8,16 +8,15 @@
       height="720"
       translation="[0,0]">
       
-      <sideBar
-        id="sideBar"
-        translation="[0,0]">
-      </sideBar>
-
       <Group 
         id="container" 
         translation="[100, 20]">
       </Group>
 
+      <sideBar
+        id="sideBar"
+        translation="[0,0]">
+      </sideBar>
     </Rectangle>
   </children>
 </component>
