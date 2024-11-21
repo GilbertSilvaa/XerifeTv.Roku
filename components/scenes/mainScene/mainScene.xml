@@ -3,9 +3,21 @@
   <children>
     <Rectangle
       id="content"
-      color="0x160802"
-      translation="[0,0]" 
-    >
+      color="0x150702"
+      width="1280"
+      height="720"
+      translation="[0,0]">
+      
+      <sideBar
+        id="sideBar"
+        translation="[0,0]">
+      </sideBar>
+
+      <Group 
+        id="container" 
+        translation="[100, 20]">
+      </Group>
+
     </Rectangle>
   </children>
 </component>

@@ -1,0 +1,22 @@
+<component name="SideBar" extends="Rectangle">
+  <script type="text/brightscript" uri="sideBar.brs" />
+  
+  <children>
+    <LayoutGroup translation="[20, 230]" itemSpacings="40">
+      <Poster 
+        uri="pkg:/images/icons/movies.png" 
+        width="36" 
+        height="36"/>
+
+      <Poster 
+        uri="pkg:/images/icons/series.png" 
+        width="36" 
+        height="36"/>
+
+      <Poster 
+        uri="pkg:/images/icons/live.png" 
+        width="36" 
+        height="36"/>
+    </LayoutGroup>
+  </children>
+</component>

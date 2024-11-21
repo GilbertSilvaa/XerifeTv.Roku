@@ -1,2 +1,2 @@
-sub init()
+sub Init()
 end sub
