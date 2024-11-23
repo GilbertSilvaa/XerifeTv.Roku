@@ -1,6 +1,11 @@
 <component name="SideBar" extends="Rectangle">
   <script type="text/brightscript" uri="sideBar.brs" />
   
+  <interface>
+    <field id="back" type="bool" value="false" alwaysNotify="true" />
+    <field id="screenSelected" type="string" value="movies" />
+  </interface>
+
   <children>
     <LayoutGroup translation="[20, 225]" itemSpacings="45">
 
@@ -19,7 +24,12 @@
           width="36" 
           height="36"/>
 
-        <Label text="Filmes" height="36" vertAlign="center"/>
+        <Label 
+          id="movies-label" 
+          text="Filmes" 
+          height="36" 
+          vertAlign="center"
+          visible="false"/>
       </LayoutGroup>
 
       <LayoutGroup 
@@ -38,7 +48,12 @@
           width="36" 
           height="36"/>
         
-        <Label text="Séries" height="36" vertAlign="center"/>
+        <Label 
+          id="series-label" 
+          text="Séries" 
+          height="36" 
+          vertAlign="center"
+          visible="false"/>
       </LayoutGroup>
 
       <LayoutGroup       
@@ -57,7 +72,12 @@
           width="36" 
           height="36"/>
         
-        <Label text="Canais" height="36" vertAlign="center"/>
+        <Label 
+          id="channels-label" 
+          text="Canais" 
+          height="36" 
+          vertAlign="center"
+          visible="false"/>
       </LayoutGroup>
     </LayoutGroup>
   </children>

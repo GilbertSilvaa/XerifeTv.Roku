@@ -1,6 +1,10 @@
 <component name="MoviesScreen" extends="Group">
   <script type="text/brightscript" uri="moviesScreen.brs" />
   
+  <interface>
+    <field id="screenLimit" type="bool" value="false" alwaysNotify="true"/>
+  </interface>
+
   <children>
     <Label text="Movies Screen"/>
   </children>

@@ -1,13 +1,23 @@
 sub Init()
   m.top.SetFocus(true)
-
   m.container = m.top.FindNode("container")
   m.sideBar = m.top.FindNode("sideBar")
+  m.sideBar.ObserveField("back", "OnScreenFocus")
   m.global.ObserveField("screen", "HandleChangeScreen")
 
-  screen = CreateObject("RoSGNode", m.global.screen)
-  m.container.AppendChild(screen)
+  m.screen = CreateObject("RoSGNode", m.global.screen)
+  m.screen.ObserveField("screenLimit", "OnSideBarFocus")
+
+  m.container.AppendChild(m.screen)
+  m.screen.SetFocus(true)
+end sub
+
+sub OnSideBarFocus()
   m.sideBar.SetFocus(true)
+end sub
+
+sub OnScreenFocus()
+  m.screen.SetFocus(true)
 end sub
 
 sub HandleChangeScreen(event as object)
