@@ -3,6 +3,7 @@ sub Init()
   m.container = m.top.FindNode("container")
   m.sideBar = m.top.FindNode("sideBar")
   m.sideBar.ObserveField("back", "OnScreenFocus")
+  m.sideBar.ObserveField("screenSelected", "HandleChangeScreen")
   m.global.ObserveField("screen", "HandleChangeScreen")
 
   m.screen = CreateObject("RoSGNode", m.global.screen)
@@ -26,6 +27,8 @@ sub HandleChangeScreen(event as object)
   end while
 
   screenName = event.GetData()
-  screen = CreateObject("RoSGNode", screenName)
-  m.container.AppendChild(screen)
+  m.screen = CreateObject("RoSGNode", screenName)
+  m.screen.ObserveField("screenLimit", "OnSideBarFocus")
+  m.container.AppendChild(m.screen)
+  m.sideBar.back = true
 end sub

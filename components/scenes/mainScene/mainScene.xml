@@ -10,7 +10,7 @@
       
       <Group 
         id="container" 
-        translation="[100, 20]">
+        translation="[120, 20]">
       </Group>
 
       <sideBar

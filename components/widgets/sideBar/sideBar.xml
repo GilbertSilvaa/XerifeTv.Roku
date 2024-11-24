@@ -3,7 +3,7 @@
   
   <interface>
     <field id="back" type="bool" value="false" alwaysNotify="true" />
-    <field id="screenSelected" type="string" value="movies" />
+    <field id="screenSelected" type="string" value="MoviesScreen" />
   </interface>
 
   <children>

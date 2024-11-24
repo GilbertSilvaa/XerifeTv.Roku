@@ -1,0 +1,11 @@
+<component name="SeriesScreen" extends="Group">
+  <script type="text/brightscript" uri="seriesScreen.brs" />
+  
+  <interface>
+    <field id="screenLimit" type="bool" value="false" alwaysNotify="true"/>
+  </interface>
+  
+  <children>
+    <Label text="Series Screen"/>
+  </children>
+</component>

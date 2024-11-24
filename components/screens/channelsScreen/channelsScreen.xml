@@ -1,0 +1,11 @@
+<component name="ChannelsScreen" extends="Group">
+  <script type="text/brightscript" uri="channelsScreen.brs" />
+  
+  <interface>
+    <field id="screenLimit" type="bool" value="false" alwaysNotify="true"/>
+  </interface>
+
+  <children>
+    <Label text="Channels Screen"/>
+  </children>
+</component>

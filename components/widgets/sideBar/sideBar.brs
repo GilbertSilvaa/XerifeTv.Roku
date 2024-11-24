@@ -26,7 +26,7 @@ end sub
 
 sub CloseSideBar()
   FocusScreenSelected()
-  m.top.width = 90
+  m.top.width = 100
   m.btnMoviesLabel.visible = false
   m.btnSeriesLabel.visible = false
   m.btnChannelsLabel.visible = false
@@ -42,14 +42,14 @@ sub OnBtnFocusChange(event as object)
 end sub 
 
 sub FocusScreenSelected()
-  if m.top.screenSelected = "movies" then m.btnMovies.SetFocus(true)
-  if m.top.screenSelected = "series" then m.btnSeries.SetFocus(true)
-  if m.top.screenSelected = "channels" then m.btnChannels.SetFocus(true)
+  if m.top.screenSelected = "MoviesScreen" then m.btnMovies.SetFocus(true)
+  if m.top.screenSelected = "SeriesScreen" then m.btnSeries.SetFocus(true)
+  if m.top.screenSelected = "ChannelsScreen" then m.btnChannels.SetFocus(true)
 end sub
 
 sub Setup()
   m.top.color = "0x1e0b04"
-  m.top.width = 90
+  m.top.width = 100
   m.top.height = 720
 end sub
 
@@ -67,9 +67,9 @@ function OnKeyEvent(key as string, press as boolean) as boolean
   end if
 
   if key = "OK" then
-    if m.btnMovies.HasFocus() then m.top.screenSelected = "movies"
-    if m.btnSeries.HasFocus() then m.top.screenSelected = "series"
-    if m.btnChannels.HasFocus() then m.top.screenSelected = "channels"
+    if m.btnMovies.HasFocus() then m.top.screenSelected = "MoviesScreen"
+    if m.btnSeries.HasFocus() then m.top.screenSelected = "SeriesScreen"
+    if m.btnChannels.HasFocus() then m.top.screenSelected = "ChannelsScreen"
   end if 
 
   if key = "right" then m.top.back = true
