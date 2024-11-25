@@ -7,5 +7,18 @@
 
   <children>
     <Label text="Movies Screen"/>
+
+    <RowList 
+      id="exampleRowList" 
+      translation="[0, 80]" 
+      itemComponentName="RowListItem" 
+      numRows="4" 
+      itemSize="[1200, 170]" 
+      rowItemSize="[[270, 170]]" 
+      itemSpacing="[0, 40]" 
+      showRowLabel="[true]"
+      rowItemSpacing="20" 
+      vertFocusAnimationStyle="fixedFocusWrap" 
+      rowFocusAnimationStyle="fixedFocusWrap"/>
   </children>
 </component>

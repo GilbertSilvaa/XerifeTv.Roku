@@ -1,0 +1,24 @@
+<component name="RowListItem" extends="Group">
+  <script type="text/brightscript" uri="rowListItem.brs" />
+
+  <interface >
+    <field id="itemContent" type="node" onChange="showcontent" />
+  </interface>
+
+  <children >
+    <Poster
+      id="itemPoster"
+      translation="[10, 10]"
+      width="250"
+      height="150">
+    </Poster>
+ 
+    <Label
+      id="itemLabel"
+      translation="[20, 264]"
+      width="250"
+      horizAlign="right"
+      opacity="0.0"
+      visible="false"/>
+  </children>
+</component>

@@ -7,8 +7,6 @@ sub Init()
   m.btnChannelsLabel = m.top.FindNode("channels-label")
 
   m.top.ObserveField("focusedChild", "OpenSideBar")
-  m.top.ObserveField("back", "CloseSideBar")
-
   m.btnMovies.ObserveField("focusedChild", "OnBtnFocusChange")
   m.btnSeries.ObserveField("focusedChild", "OnBtnFocusChange")
   m.btnChannels.ObserveField("focusedChild", "OnBtnFocusChange")

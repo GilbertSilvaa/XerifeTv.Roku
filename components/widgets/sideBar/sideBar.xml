@@ -2,7 +2,7 @@
   <script type="text/brightscript" uri="sideBar.brs" />
   
   <interface>
-    <field id="back" type="bool" value="false" alwaysNotify="true" />
+    <field id="back" type="bool" value="false" alwaysNotify="true" onChange="CloseSideBar" />
     <field id="screenSelected" type="string" value="MoviesScreen" />
   </interface>
 
