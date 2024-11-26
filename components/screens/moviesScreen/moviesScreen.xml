@@ -13,12 +13,13 @@
       translation="[0, 80]" 
       itemComponentName="RowListItem" 
       numRows="4" 
-      itemSize="[1200, 170]" 
-      rowItemSize="[[270, 170]]" 
+      itemSize="[1200, 210]" 
+      rowItemSize="[[210, 210]]" 
       itemSpacing="[0, 40]" 
       showRowLabel="[true]"
-      rowItemSpacing="20" 
+      rowItemSpacing="40" 
+      drawFocusFeedback="false"
       vertFocusAnimationStyle="fixedFocusWrap" 
-      rowFocusAnimationStyle="fixedFocusWrap"/>
+      rowFocusAnimationStyle="fixedFocus"/>
   </children>
 </component>

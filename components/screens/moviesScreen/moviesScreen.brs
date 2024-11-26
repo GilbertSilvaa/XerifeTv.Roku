@@ -1,7 +1,15 @@
 sub Init()
-  rowlist = m.top.findNode("exampleRowList")
-  rowlist.content = CreateObject("roSGNode", "RowListContent")
-  rowlist.SetFocus(true)
+  m.rowlist = m.top.findNode("exampleRowList")
+  
+  getMoviesTask = CreateObject("roSGNode", "GetMoviesTask")
+  getMoviesTask.ObserveField("response", "MoviesResponse")
+  getMoviesTask.control = "run"
+end sub
+
+sub MoviesResponse(event as object)
+  data = event.GetData()
+  m.rowlist.content = data
+  m.rowlist.SetFocus(true)
 end sub
 
 function OnKeyEvent(key as string, press as boolean) as boolean

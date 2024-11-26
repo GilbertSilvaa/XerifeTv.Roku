@@ -3,14 +3,23 @@
 
   <interface >
     <field id="itemContent" type="node" onChange="showcontent" />
+    <field id="itemHasFocus" type="bool" onChange="OnFocus"/>
   </interface>
 
   <children >
+    <Rectangle 
+      id="borderFocus"
+      width="211" 
+      height="211" 
+      color="0xffd500" 
+      translation="[0, 0]" 
+      visible="false"/>
+
     <Poster
       id="itemPoster"
-      translation="[10, 10]"
-      width="250"
-      height="150">
+      translation="[5, 5]"
+      width="200"
+      height="200">
     </Poster>
  
     <Label
