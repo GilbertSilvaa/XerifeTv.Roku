@@ -1,0 +1,26 @@
+<component name="MovieSynopsisScreen" extends="Rectangle">
+  <script type="text/brightscript" uri="movieSynopsisScreen.brs" />
+  
+  <interface>
+    <field id="content" type="node" onChange="SetContent" />
+    <field id="back" type="bool" value="false" alwaysNotify="true" />
+  </interface>
+
+  <children>
+    <Poster 
+      id="background" 
+      width="1280" 
+      height="720"
+      translation="[0, 0]"/>
+
+    <Rectangle 
+      color="0x010413"
+      width="1280" 
+      height="720"
+      translation="[0, 0]"
+      opacity="0.75"
+    />
+
+    <Label id="title" translation="[40, 40]"/>
+  </children>
+</component>

@@ -1,4 +1,4 @@
-<component name="MoviesScreen" extends="Group">
+<component name="MoviesCategoryScreen" extends="Group">
   <script type="text/brightscript" uri="moviesScreen.brs" />
   
   <interface>
@@ -17,6 +17,7 @@
       showRowLabel="[true]"
       rowLabelOffset="[[0,10]]"
       drawFocusFeedback="false"
+      focusBitmapUri="pkg:/images/focusThumb.jpg"
       vertFocusAnimationStyle="fixedFocusWrap" 
       rowFocusAnimationStyle="fixedFocus"/>
   </children>

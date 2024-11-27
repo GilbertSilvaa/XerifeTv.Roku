@@ -40,7 +40,7 @@ sub OnBtnFocusChange(event as object)
 end sub 
 
 sub FocusScreenSelected()
-  if m.top.screenSelected = "MoviesScreen" then m.btnMovies.SetFocus(true)
+  if m.top.screenSelected = "MoviesCategoryScreen" then m.btnMovies.SetFocus(true)
   if m.top.screenSelected = "SeriesScreen" then m.btnSeries.SetFocus(true)
   if m.top.screenSelected = "ChannelsScreen" then m.btnChannels.SetFocus(true)
 end sub
@@ -65,7 +65,7 @@ function OnKeyEvent(key as string, press as boolean) as boolean
   end if
 
   if key = "OK" then
-    if m.btnMovies.HasFocus() then m.top.screenSelected = "MoviesScreen"
+    if m.btnMovies.HasFocus() then m.top.screenSelected = "MoviesCategoryScreen"
     if m.btnSeries.HasFocus() then m.top.screenSelected = "SeriesScreen"
     if m.btnChannels.HasFocus() then m.top.screenSelected = "ChannelsScreen"
   end if 

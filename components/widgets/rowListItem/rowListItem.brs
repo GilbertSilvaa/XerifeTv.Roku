@@ -11,6 +11,7 @@ sub Showcontent()
 end sub
 
 sub OnFocus()
+  print m.top
   if m.top.itemHasFocus then 
     m.borderFocus.color = "0xffd500"
   else

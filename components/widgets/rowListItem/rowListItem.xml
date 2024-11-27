@@ -3,7 +3,8 @@
 
   <interface >
     <field id="itemContent" type="node" onChange="showcontent" />
-    <field id="itemHasFocus" type="bool" onChange="OnFocus"/>
+    <field id="itemHasFocus" type="bool" onChange="OnFocus" />
+    <field id="focusPercent" type="Float"/>
   </interface>
 
   <children >
