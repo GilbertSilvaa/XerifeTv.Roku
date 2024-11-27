@@ -11,5 +11,9 @@ sub Showcontent()
 end sub
 
 sub OnFocus()
-  m.borderFocus.visible = m.top.itemHasFocus
+  if m.top.itemHasFocus then 
+    m.borderFocus.color = "0xffd500"
+  else
+    m.borderFocus.color = "0xffffff"
+  end if
 end sub

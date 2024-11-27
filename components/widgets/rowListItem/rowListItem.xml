@@ -9,16 +9,15 @@
   <children >
     <Rectangle 
       id="borderFocus"
-      width="211" 
-      height="211" 
-      color="0xffd500" 
-      translation="[0, 0]" 
-      visible="false"/>
+      width="186" 
+      height="206" 
+      color="0xffffff" 
+      translation="[0, 0]"/>
 
     <Poster
       id="itemPoster"
-      translation="[5, 5]"
-      width="200"
+      translation="[3, 3]"
+      width="180"
       height="200">
     </Poster>
  

@@ -6,18 +6,16 @@
   </interface>
 
   <children>
-    <Label text="Movies Screen"/>
-
     <RowList 
-      id="exampleRowList" 
-      translation="[0, 80]" 
+      id="rowList" 
+      translation="[0, 10]" 
       itemComponentName="RowListItem" 
-      numRows="4" 
-      itemSize="[1200, 210]" 
-      rowItemSize="[[210, 210]]" 
-      itemSpacing="[0, 40]" 
+      numRows="5" 
+      itemSize="[1200, 230]" 
+      rowItemSize="[[200, 230]]" 
+      itemSpacing="[0, 38]" 
       showRowLabel="[true]"
-      rowItemSpacing="40" 
+      rowLabelOffset="[[0,10]]"
       drawFocusFeedback="false"
       vertFocusAnimationStyle="fixedFocusWrap" 
       rowFocusAnimationStyle="fixedFocus"/>

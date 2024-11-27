@@ -3,7 +3,7 @@ sub Init()
 end sub
 
 sub Request()
-  URL = "https://xerifetv-cms.onrender.com/Api/Content/Movies?limit=10"
+  URL = "https://xerifetv-cms.onrender.com/Api/Content/Movies?limit=99"
   urlTransfer = CreateObject("RoUrlTransfer")
   urlTransfer.SetUrl(URL)
   urlTransfer.SetCertificatesFile("common:/certs/ca-bundle.crt")
