@@ -46,7 +46,7 @@ sub FocusScreenSelected()
 end sub
 
 sub Setup()
-  m.top.color = "0x1e0b04"
+  m.top.color = "0x020822"
   m.top.width = 100
   m.top.height = 720
 end sub

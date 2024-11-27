@@ -3,7 +3,7 @@
   <children>
     <Rectangle
       id="content"
-      color="0x150702"
+      color="0x010314"
       width="1280"
       height="720"
       translation="[0,0]">
